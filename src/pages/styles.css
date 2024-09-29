@@ -1,0 +1,462 @@
+.Landing .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.Landing header {
+    background-color: var(--white-active);
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    padding: 0 20vw 0 20vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.Landing header .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Landing header .text h1 {
+    font-weight: 900;
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.Landing header .text p {
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+.Landing header .buttons {
+    margin-top: 15px;
+    display: flex;
+}
+
+.Landing header .buttons .button {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: transform 0.1s ease;
+}
+
+.Landing header .buttons .button:hover {
+    transform: scale(1.05);
+}
+
+.Landing header .buttons .button .icon {
+    margin-right: 10px;
+}
+
+.Auth {
+    background-color: var(--white);
+}
+
+.Auth .form {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+    padding: 20vh 20vw 0 20vw;
+}
+
+.Auth .form .main {
+    width: 30vw;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.Auth .form h1#main {
+    font-size: 6rem;
+    margin-bottom: 20px;
+}
+
+.Auth .form h1 {
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.Auth .form p {
+    font-size: 1.7rem;
+    color: var(--grey);
+}
+
+.Auth .form .fields {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.Auth .form .fields label {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.Auth .form .fields input {
+    width: 75%;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 1.7rem;
+    background-color: var(--white);
+    border-color: var(--red);
+    border-style: solid;
+    border-radius: 5px;
+    outline: none !important;
+    font-weight: 500;
+}
+
+.Auth .form .fields input:focus {
+    border-color: #b53e44;
+}
+
+.Auth .form .button {
+    font-size: 1.3rem;
+}
+
+.Auth .form .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Auth .form .buttons * {
+    margin-right: 10px;
+}
+
+.Auth .form .button{
+    border: 3px solid var(--red);
+    transition: all 0.2s ease;
+}
+
+.Auth .form .button:hover {
+    background-color: var(--red-active) !important;
+    border-color: var(--red-active);
+}
+
+.Auth .form #button-alt:hover {
+    background-color: var(--white-active) !important;
+    color: var(--red-active) !important;
+}
+
+.Auth .form .buttons {
+    display: flex;
+    align-items: center;
+}
+
+.Dashboard {
+    overflow-y: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20vw 0 20vw;
+    background-color: var(--white);
+}
+
+.Dashboard .nav {
+    align-self: center;
+    margin-top: 30px;
+    width: max-content;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1000px;
+    box-shadow: 0px 2px 20px rgb(192, 192, 192);
+}
+
+.Dashboard .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 10px;
+}
+
+.Dashboard .nav ul li {
+    margin: 0 20px 0 20px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.Dashboard .nav ul li .icon {
+    margin-right: 5px;
+}
+
+.Dashboard .nav ul li:hover {
+    color: var(--red) !important;
+}
+
+.Dashboard .main {
+    margin-top: 30px;
+}
+
+.Dashboard .content {
+    width: 100%;
+    height: 100%;
+}
+
+.Dashboard h1#main {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.Upload {
+    width: 100%;
+    height: 100%;
+}
+
+.Upload .file-upload-container {
+    margin-top: 30px;
+    height: 50vh;
+    background-color: var(--white-active);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease ;
+}
+
+.Upload .file-upload-container:hover {
+    transform: scale(1.03);
+}
+
+.Upload .file-upload-container .prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.Upload .file-upload-container .prompt .icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.Upload .file-upload-container .prompt {
+    color: var(--grey);
+}
+
+.Upload label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Upload #uploadfile {
+    position: absolute;
+    opacity: 0;
+}
+
+.Upload .button {
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    transition: all 0.2s ease;
+    display: flex;
+}
+
+.Upload .button span {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.Upload .button .icon {
+    margin-left: 5px;
+}
+
+.Upload .button:hover {
+    transform: scale(1.05);
+}
+
+.Upload .grid {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+}
+
+.Upload .grid .box {
+    background-color: var(--white);
+    box-shadow: -2px 2px 10px rgb(212, 209, 209);
+    height: 100%;
+    width: 33%;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.Upload .grid .box .head {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--red);
+}
+
+.Upload .grid .box .head .icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.Upload .grid .box:nth-child(1) {
+    margin-right: 10px;
+}
+
+.Upload .grid .box:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Upload .grid .box:nth-child(3) {
+    margin-left: 10px;
+}
+
+.Upload .grid .box p {
+    margin-top: 10px;
+}
+
+.Search .bar {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Search .bar input {
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 100px;
+    border: 3px solid var(--dark);
+    outline: none !important;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.Search .bar .button {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: var(--red);
+    color: var(--white);
+    transition: background-color 0.1s ease;
+}
+
+.Search .bar .button:hover {
+    background-color: var(--red-active) !important;
+}
+
+.Search .bar input:focus {
+    border-color: var(--red);
+}
+
+.Search .prompt-container {
+    background-color: var(--white-active);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.Search .prompt-container h2 {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.Search .prompt-container h2 .icon {
+    margin-right: 10px;
+}
+
+.Search .myfiles .divide {
+    height: 3px;
+    width: 100%;
+    background-color: var(--grey);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Search .myfiles .file-list {
+    overflow-y: scroll;
+    width: 100%;
+    height: 40vh;
+    padding: 20px;
+}
+
+.Search .myfiles .my-file-container {
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 10px rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+    transition: all 0.1s ease;
+    position: relative;
+}
+
+.Search .my-file-container p.date {
+    position: absolute;
+    right: 20px;
+}
+
+.Search .myfiles .my-file-container:hover {
+    transform: scale(102%);
+    color: var(--red);
+}
+
+.Search .myfiles .my-file-container .icon {
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.Search .myfiles h1 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.Profile h2.main {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.Profile h2.main .icon {
+    margin-right: 10px;
+}
+.Profile .logout {
+    margin-top: 30px;
+    font-size: 1.3rem;
+    transition: transform 0.1s ease;
+}
+
+.Profile .logout:hover {
+    transform: scale(1.05);
+}
